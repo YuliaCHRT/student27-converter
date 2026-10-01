@@ -21,7 +21,6 @@ jobs:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
-    # Права для токена: читать репо и писать пакеты
     permissions:
       contents: read
       packages: write
@@ -43,5 +42,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/YuliaCHRT/student27-converter:latest
-            ghcr.io/YuliaCHRT/student27-converter:${{ github.sha }}
+            ghcr.io/yuliachrt/student27-converter:latest
+            ghcr.io/yuliachrt/student27-converter:${{ github.sha }}
