@@ -43,5 +43,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/YuliaCHRT/student-converter:latest
-            ghcr.io/YuliaCHRT/student-converter:${{ github.sha }}
+            ghcr.io/YuliaCHRT/student27-converter:latest
+            ghcr.io/YuliaCHRT/student27-converter:${{ github.sha }}
